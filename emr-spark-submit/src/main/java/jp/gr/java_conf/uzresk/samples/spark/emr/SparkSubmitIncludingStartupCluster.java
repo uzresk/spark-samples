@@ -136,6 +136,6 @@ public class SparkSubmitIncludingStartupCluster {
                 .withEmrManagedMasterSecurityGroup(Resource.getString("emr.master-sg"))
                 .withEmrManagedSlaveSecurityGroup(Resource.getString("emr.slave-sg"))
                 .withEc2KeyName(Resource.getString("emr.key-name"))
-                .withKeepJobFlowAliveWhenNoSteps(true); // JOB終了時にインスタンスを停止する
+                .withKeepJobFlowAliveWhenNoSteps(false); // JOB終了時にインスタンスを停止する
     }
 }
